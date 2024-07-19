@@ -8,23 +8,32 @@ function submit() {
   const second = parseFloat(secondinput.value);
   let calculationResult;
 
-  switch (operation) {
+  switch (operation.value) {
     case "Penjumlahan":
-      result = first + second;
+      calculationResult = first + second;
       break;
     case "Pengurangan":
-      result = first - second;
+      calculationResult = first - second;
       break;
     case "Perkalian":
-      result = first * second;
+      calculationResult = first * second;
       break;
     case "Pembagian":
       if (second !== 0) {
-        result = first / second;
+        calculationResult = first / second;
       } else {
-        result = "Undefined";
+        calculationResult = "Undefined";
       }
       break;
+    default:
+      calculationResult = "Invalid operation";
   }
   result.value = calculationResult;
+}
+
+function reset() {
+  document.getElementById("first").value = "";
+  document.getElementById("second").value = "";
+  document.getElementById("operation").value = "";
+  document.getElementById("result").value = "";
 }
