@@ -1,0 +1,84 @@
+body {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-top: 40px;
+}
+
+.container {
+  max-width: 500px;
+  height: 600px;
+  background-color: #fadcd5;
+  border-radius: 16px;
+  border: 2px solid #2d222f;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #4b2138;
+}
+
+h3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #4b2138;
+}
+
+.input-container {
+  margin-bottom: 10px;
+  text-align: left;
+  padding-top: 5px;
+  appearance: none; /* Removes default arrow in some browsers */
+  -webkit-appearance: none; /* Removes default arrow in webkit browsers */
+  -moz-appearance: none;
+  border-radius: 8px;
+  padding: 10px;
+  padding-left: 10px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+label {
+  margin: 2px;
+  font-weight: bold;
+}
+input[type="number"] {
+  padding: 10px;
+  padding-left: 10px;
+  border: 2px solid #765d67;
+  border-radius: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+.submit {
+  background-color: #4b2138;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 5px;
+  font-weight: bold;
+  transition: 0.2s ease;
+  padding: 10px 20px;
+  color: white;
+  justify-content: right;
+}
+.reset {
+  background-color: #6d3c52;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 5px;
+  font-weight: bold;
+  transition: 0.2s ease;
+  padding: 10px 20px;
+  color: white;
+  justify-content: right;
+}
+.submit:hover,
+.reset:hover {
+  background-color: #765d67;
+}

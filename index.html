@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to our calculator</h1>
+
+      <div class="input-container">
+        <h3>
+          1st Number :
+          <input type="number" id="first" placeholder="Type the 1st number" />
+        </h3>
+      </div>
+      <div class="input-container">
+        <h3>
+          2nd Number :
+          <input type="number" id="second" placeholder="Type the 2nd number" />
+        </h3>
+      </div>
+      <div class="input-container">
+        <h3>
+          Operation :
+          <select name="options" class="input-container" id="operation">
+            <option value="Option 1">Penjumlahan</option>
+            <option value="Option 2">Pengurangan</option>
+            <option value="Option 3">Perkalian</option>
+            <option value="Option 4">Pembagian</option>
+          </select>
+        </h3>
+      </div>
+      <button class="submit" onclick="submit()">Submit</button>
+      <button class="reset" onclick="reset()">Reset</button>
+
+      <div class="result-container">
+        <h3>Result : <input type="number" disabled id="result" /></h3>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
