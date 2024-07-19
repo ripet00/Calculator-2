@@ -2,7 +2,7 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
-  padding-top: 40px;
+  padding-top: 30px;
 }
 
 .container {
@@ -64,7 +64,7 @@ input[type="number"] {
   transition: 0.2s ease;
   padding: 10px 20px;
   color: white;
-  justify-content: right;
+  align-items: center;
 }
 .reset {
   background-color: #6d3c52;
@@ -76,9 +76,31 @@ input[type="number"] {
   transition: 0.2s ease;
   padding: 10px 20px;
   color: white;
-  justify-content: right;
+  align-items: center;
 }
 .submit:hover,
 .reset:hover {
   background-color: #765d67;
+}
+
+@media screen and (max-width: 390px) {
+  .container {
+    padding: 20px;
+    height: 500px;
+  }
+
+  h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+  h3 {
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .submit,
+  .reset {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
 }
